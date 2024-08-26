@@ -60,7 +60,7 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
-  --bs-body-bg: #fff;
+  --bs-body-bg: #FEEFF2;
 }
 
 *,
@@ -5541,7 +5541,7 @@ textarea.form-control-lg {
   z-index: 1050;
   width: 100vw;
   height: 100vh;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent black for the backdrop */
 }
 .modal-backdrop.fade {
   opacity: 0;
@@ -7795,12 +7795,12 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: plum !important;
+  background-color: #849167;
 }
 
 .bg-secondary {
   --bs-bg-opacity: 1;
-  background-color: var(--bs-pink) !important;
+  background-color: #849167 !important;
 }
 
 .bg-success {
@@ -11325,6 +11325,31 @@ html {
   color: #fff;
 }
 
+.divider-custom .divider-custom-line-secondary {
+  width: 100%;
+  max-width: 7rem;
+  height: 0.25rem;
+  background-color: #FEF9C2;
+  border-radius: 1rem;
+  border-color: #FEF9C2;
+}
+.divider-custom .divider-custom-line-secondary:first-child {
+  margin-right: 1rem;
+}
+.divider-custom .divider-custom-line-secondary:last-child {
+  margin-left: 1rem;
+}
+.divider-custom .divider-custom-icon {
+  color: #2c3e50;
+  font-size: 2rem;
+}
+.divider-custom.divider-light .divider-custom-line-secondary {
+  background-color: #fff;
+}
+.divider-custom.divider-light .divider-custom-icon {
+  color: #fff;
+}
+
 .btn-xl {
   padding: 1rem 1.75rem;
   font-size: 1.25rem;
@@ -11388,7 +11413,7 @@ html {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: #pink;
+    background: pink;
   }
 
   #mainNav.navbar-shrink {
@@ -11434,7 +11459,7 @@ html {
 
 @media (min-width: 992px) {
   .masthead {
-    padding-top: calc(6rem + 104px);
+    padding-top: calc(6rem + 90px);
     padding-bottom: 6rem;
   }
   .masthead .masthead-heading {
@@ -11445,6 +11470,11 @@ html {
     font-size: 1.5rem;
   }
 }
+
+.portfolio-bg {
+  background-color: #849167;
+}
+
 .portfolio .portfolio-item {
   cursor: pointer;
   position: relative;
@@ -11459,7 +11489,7 @@ html {
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(26, 188, 156, 0.9);
+  background-color: #C47680;
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
@@ -11493,4 +11523,87 @@ html {
 
 .copyright {
   background-color: #1a252f;
+}
+
+.dm-serif-text-regular {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-text-regular-italic {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.socials-container {
+  margin-top: 30px;
+}
+
+.socials {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.socials:hover, .socials:focus {
+  color: white; /* Ensure color remains the same on hover/focus, adjust if needed */
+  text-decoration: none; /* Ensure underline does not appear on hover/focus */
+}
+
+.bg-pink {
+  background-color: #C47680; /* Change to your desired pink color */
+  border-radius: 25px;     /* Optional: add rounded corners */
+  display: inline-flex;   /* Ensure it only takes as much width as needed */
+  align-items: center;    /* Center items vertically */
+  padding: 5px;           /* Add some padding around the content */
+  width: auto;
+}
+
+.mySlides {
+  display: none;
+  width: 90%; 
+  height: auto;
+}
+
+.transparent-btn{
+    border: none;
+    font-size: 50px;
+    background-color: transparent;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards; /* Ensures the final state is maintained */
+  opacity: 0; /* Start with hidden */
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.skill-container {
+  padding-top: 15px;
+  padding-left: 60px;
+}
+
+.skill-text, .skill-text-bold, .skill-text-color {
+  margin-bottom: 5px;
+}
+
+.skill-text-bold, .skill-text-color {
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.skill-text-color {
+  color: #C47680;
+}
+
+.hobby-container {
+  padding-right: 10px;
 }
