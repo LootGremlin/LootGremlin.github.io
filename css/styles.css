@@ -11607,3 +11607,52 @@ html {
 .hobby-container {
   padding-right: 10px;
 }
+
+.custom-headings {
+  font-size: 120px; 
+  color: #FEF9C2;
+}
+
+.custom-modal-heading {
+  font-size: 70px;
+}
+
+.about-divider {
+  justify-content: start;
+}
+
+.linkedin-link {
+  justify-content: start;
+}
+
+@media (max-width: 576px) {
+  .custom-headings {
+    font-size: 90px;
+  }
+
+  .custom-modal-heading {
+    font-size: 50px;
+  }
+
+  .mySlides {
+    width: 75%;
+  }
+}
+
+@media (max-width: 765px) {
+  .image-container {
+    padding-bottom: 90px;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-divider {
+    justify-content: center;
+  }
+
+  .linkedin-link {
+    justify-content: center;
+  }
+}
